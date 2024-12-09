@@ -1,0 +1,59 @@
+.profile-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00b894; /* Color del borde de la imagen */
+}
+
+.edit-button {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+ion-list-header h2 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+ion-item ion-label {
+  font-weight: bold;
+  color: #333;
+}
+
+ion-item ion-text {
+  color: #555;
+}
+
+ion-text.active {
+  color: #00b894; /* Color para estado activo */
+}
+
+ion-text.inactive {
+  color: #ff6b6b; /* Color para estado inactivo */
+}
+
+.contenedor {
+  --background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+}
+
+.lista-usuarios {
+  background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+  padding: 10px;
+  margin: 0;
+  box-shadow: none; /* Elimina cualquier sombra */
+  border: none; /* Elimina cualquier borde */
+  border-radius: 0; /* Elimina bordes redondeados, si los hubiera */
+}
+
+.lista-usuarios ion-item,
+ion-list-header {
+  --ion-item-background: transparent; /* Hace transparente el fondo de los items */
+  background: transparent; /* Para asegurar transparencia total */
+  border: none; /* Elimina cualquier borde del item */
+}/*# sourceMappingURL=perfil.page.css.map */

@@ -1,0 +1,78 @@
+<ion-content class="register-page">
+  <div class="header">
+    <h1>REGISTRARSE</h1>
+  </div>
+
+  <div class="form">
+  <ion-item class="input-item" lines="none">
+    <ion-icon name="person-outline" slot="start"></ion-icon>
+    <ion-input 
+      placeholder="Nombre" 
+      type="text" 
+      [(ngModel)]="usuario.nombre">
+    </ion-input>
+  </ion-item>
+  
+  <ion-item class="input-item" lines="none">
+    <ion-icon name="person-outline" slot="start"></ion-icon>
+    <ion-input 
+      placeholder="Apellido" 
+      type="text" 
+      [(ngModel)]="usuario.apellido">
+    </ion-input>
+  </ion-item>
+  
+  <ion-item class="input-item" lines="none">
+    <ion-icon name="mail-outline" slot="start"></ion-icon>
+    <ion-input 
+      placeholder="Email" 
+      type="email" 
+      [(ngModel)]="usuario.email">
+    </ion-input>
+  </ion-item>
+  
+  <ion-item class="input-item" lines="none">
+    <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+    <ion-input 
+      placeholder="contrasena" 
+      type="contrasena" 
+      [(ngModel)]="usuario.password">
+    </ion-input>
+  </ion-item>
+
+
+
+
+
+  <ion-button 
+    expand="block" 
+    class="register-button" 
+    (click)="crearusuario()">
+    Crear usuario
+  </ion-button>
+</div>
+
+    <div class="login-text">
+      <span>Already a Member? </span>
+      <a [routerLink]="['/login']">Sign in</a>
+    </div>
+  
+</ion-content>
+
+<!-- Agregar un footer con botones de navegación -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goHome()">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-footer>
+

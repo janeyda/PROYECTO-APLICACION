@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Elige una opción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="selection-page">
+  <div class="selection-container">
+    <h1 class="welcome-text">Hello, Friend</h1>
+    <h2>selecciona:</h2>
+    <ion-button expand="block" class="button" color="light" (click)="goToPerfil('perfil')">
+      Perfil
+    </ion-button>
+    <ion-button expand="block" class="button" color="light" (click)="goToUsuario('usuario')">
+      Usuario
+    </ion-button>
+    <ion-button expand="block" class="button" color="light" (click)="goToRol('rol')">
+      Rol
+    </ion-button>
+  </div>
+</ion-content>
+

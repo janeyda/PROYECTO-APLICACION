@@ -1,0 +1,72 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="crearperfil()">
+    <!-- Estado del Perfil -->
+    <ion-item>
+      <ion-label position="floating">Estado</ion-label>
+      <ion-input 
+        type="text" 
+        placeholder="Ingresa el estado del perfil" 
+        [(ngModel)]="perfiles.estado" 
+        name="estado" 
+        required>
+      </ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating">Rol</ion-label>
+      <ion-select 
+        [(ngModel)]="perfiles.rol_id" 
+        name="rol_id" 
+        placeholder="Selecciona un rol" 
+        required>
+        <ion-select-option *ngFor="let rol of roles" [value]="rol.id">
+          {{ rol.id }} {{ rol.nombre_rol }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+  
+    <!-- Selección de Usuario -->
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-select 
+        [(ngModel)]="perfiles.usuarios_id" 
+        name="usuarios_id" 
+        placeholder="Selecciona un usuario" 
+        required>
+        <ion-select-option *ngFor="let usuario of usuarios" [value]="usuario.id">
+          {{ usuario.nombre }} {{ usuario.apellido }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Botón para crear el perfil -->
+    <ion-button expand="block" color="primary" type="submit">
+      Crear Perfil
+    </ion-button>
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goHome()">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   
+  </ion-toolbar>
+</ion-footer>

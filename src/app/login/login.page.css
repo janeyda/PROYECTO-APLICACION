@@ -1,0 +1,99 @@
+.login-page {
+  --background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --background-blend-mode: multiply;
+  min-height: 100vh;
+}
+.login-page .header {
+  text-align: center;
+  margin-top: 40px;
+}
+.login-page .header .user-icon {
+  width: 80px;
+  height: 80px;
+}
+.login-page .header h1 {
+  font-size: 30px;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #5bc6da;
+}
+.login-page .form {
+  width: 85%;
+  height: 50%;
+  max-width: 400px;
+  --background: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  border: none;
+  margin-top: 70px;
+}
+.login-page .form .input-item {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 2rem;
+  --background: transparent; /* Elimina el fondo del cuadro */
+  --ion-item-background: transparent;
+  --border-color: transparent; /* Elimina el borde */
+}
+.login-page .form .icono {
+  text-align: center;
+  font-size: 30px;
+}
+.login-page .form .letras {
+  font-size: 1rem;
+}
+.login-page .form .forgot-password {
+  text-align: right;
+  margin-top: -10px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+.login-page .form .forgot-password a {
+  color: #007aff;
+}
+.login-page .form .login-button {
+  margin-top: 20px;
+  --background: linear-gradient(90deg, #4a90e2, #007aff);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.login-page .form .register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.login-page .form .register-text a {
+  color: #007aff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .login-page .header .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .login-page .header h2 {
+    font-size: 20px;
+  }
+  .login-page .form {
+    width: 90%;
+    padding: 20px 15px;
+  }
+  .login-page .form .input-item {
+    font-size: 14px;
+  }
+  .login-page .form .login-button {
+    font-size: 16px;
+  }
+  .login-page .form .register-text {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=login.page.css.map */

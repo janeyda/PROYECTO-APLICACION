@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>actuarol</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="contenedor">
+  <ion-item>
+    <ion-label>Selecciona un rol</ion-label>
+    <ion-select [(ngModel)]="roles.nombre" placeholder="Selecciona un rol">
+      <ion-select-option *ngFor="let rol of listaRoles" [value]="rol">
+        {{ rol }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button expand="block" color="primary" (click)="actualizarrol(roles.id)">ACTUALIZAR rol</ion-button>
+</ion-content>
+
+
+

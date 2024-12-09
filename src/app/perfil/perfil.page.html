@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen="true"  class="contenedor">
+  <ion-list class="lista-usuarios">
+    <ion-item *ngFor="let perfil of perfil">
+      <ion-avatar 
+      slot="start" 
+      [ngClass]="getEstadoClass(perfil.estado)">
+      <img [src]="server + perfil.estado" alt="Avatar para {{ perfil.estado }}">
+    </ion-avatar>
+      <ion-label>
+        <h2>{{ perfil.id }} {{ perfil.estado }}</h2>
+       
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="confirmDelete(perfil.id)">Eliminar</ion-button>
+      <ion-button slot="end" color="danger" (click)="editar(perfil.id)">Editar</ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-button class="boton3" expand="block" (click)="goToRegister()">Registrar Nuevo perfil</ion-button>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goHome()">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   
+  </ion-toolbar>
+</ion-footer>

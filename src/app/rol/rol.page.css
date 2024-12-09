@@ -1,0 +1,16 @@
+.contenedor {
+  --background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+}
+
+.lista-usuarios {
+  background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+  --ion-item-background: transparent;
+  border-radius: 10px; /* Opcional: para redondear bordes */
+  padding: 10px;
+  margin: 0;
+  box-shadow: none;
+}
+
+.boton {
+  margin: 10px;
+}/*# sourceMappingURL=rol.page.css.map */

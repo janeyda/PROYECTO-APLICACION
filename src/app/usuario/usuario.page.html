@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gestión de Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true"  class="contenedor">
+  <ion-button class="boton3" expand="block" (click)="goToRegister()">Registrar Nuevo Usuario</ion-button>
+  <ion-list class="lista-usuarios">
+    <ion-item *ngFor="let usuario of usuarios">
+      <ion-avatar slot="start">
+        <img [src]="server + usuario.nombre + usuario.apellido" alt="JANEYDA">
+      </ion-avatar>
+      <ion-label>
+       
+       
+
+       <h2>{{ usuario.nombre }} {{ usuario.apellido }}</h2>
+        <!-- <p>{{ usuario.correo }}</p> -->
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="confirmDelete(usuario.id)">Eliminar</ion-button>
+      
+      <ion-button slot="end" color="danger"(click)="editar(usuario.id)">Editar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBac()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goHom()">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-footer>

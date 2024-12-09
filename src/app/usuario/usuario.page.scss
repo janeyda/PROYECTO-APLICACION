@@ -1,0 +1,30 @@
+.contenedor{
+    --background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+    min-height: 100%;  // Para asegurarse de que cubra toda la pantalla
+    padding: 16px; // Opcional: añade algo de espacio interno
+}
+
+.boton3{
+    margin: 20px;
+    color: #f2f5f8;
+    // background-color: #ffa0a8;
+}
+
+.lista-usuarios {
+    background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%);
+    border-radius: 10px; /* Opcional: para redondear bordes */
+    padding: 10px;
+    margin: 0;
+    box-shadow: none;
+}
+
+.lista-usuarios ion-item {
+    --ion-item-background: transparent; /* Para que los items sean transparentes */
+  }
+
+  ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+}

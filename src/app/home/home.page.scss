@@ -1,0 +1,47 @@
+.selection-page {
+    --background: linear-gradient(135deg, #a0c4ff 0%, #e0f7ff 50%, #ffffff 100%); // Fondo azul cielo con degradado
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    
+      .selection-container {
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        margin-top: 150px;
+  
+        .welcome-text {
+          font-size: 3rem;
+          color: #5bc6da;
+          margin-bottom: 40px;
+          margin-top: -50px;
+          font-weight: 700;
+          // margin: 0;
+        }
+        
+    
+        h2 {
+          color: #5bc6da;
+          font-weight: 700;
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          padding: 10px;
+        }
+      }
+    
+      .button {
+        --background: transparent; /* Elimina el fondo del cuadro */
+        --border-color: transparent; /* Elimina el borde */               // Color de texto azul
+        border-radius: 100px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        // margin-top: 10px;
+        // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Sombra para resaltar los botones
+      }
+    }
+    
